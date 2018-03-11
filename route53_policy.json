@@ -1,0 +1,28 @@
+{
+    "Version": "2012-10-17",
+    "Statement": [
+        {
+            "Effect": "Allow",
+            "Action": [
+                "route53:ChangeResourceRecordSets",
+                "route53:GetHostedZone"
+            ],
+            "Resource": "arn:aws:route53:::hostedzone/Z1MX3O8HWEIIH4"
+        },
+        {
+            "Effect": "Allow",
+            "Action": [
+                "route53:Get*",
+                "route53:List*"
+            ],
+            "Resource": "*"
+        },
+        {
+            "Effect": "Allow",
+            "Action": [
+                "route53:GetChange"
+            ],
+            "Resource": "arn:aws:route53:::change/*"
+        }
+    ]
+}
